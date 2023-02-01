@@ -1,0 +1,28 @@
+.header {
+   color: aqua;
+}
+.main.text {
+   color: white;
+   background:blue ;
+}
+.page {
+   color: brown;
+}
+.text > p {
+   color: bisque;
+}
+.info {
+   color: lightcoral;
+}
+.title {
+   color: deeppink;
+}
+.photo {
+   color: indigo;
+}
+.information {
+   color: azure;
+}
+.contacts {
+   color: bisque;
+}
