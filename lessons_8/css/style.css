@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.78;
+  color: #f8f9fa80;
+}
+[class*="__container"] {
+  max-width: 1270px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header {
+  background: url("../img/01.jpg") center / cover no-repeat;
+}
+.header__content {
+  padding: 330px 0 100px 0;
+}
+.header__text {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #e5e5e5;
+  margin-bottom: 15px;
+}
+.header__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1.6;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #f8f9fa;
+  margin-bottom: 15px;
+}
+
+.header__title:hover {
+  text-shadow: red -3px 0, rgb(255, 0, 170) 3px 0;
+}
+.header__title:hover {
+  text-decoration: underline;
+}
+.text-header {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #e5e5e5;
+  margin-bottom: 0;
+}
+.main__page {
+  background: url("../img/vector.png") 95% center no-repeat,
+    #f4f7ff url("../img/vector.png") 90% center no-repeat;
+  font-family: "Inter", sans-serif;
+  color: #637381;
+  font-weight: 500;
+  font-size: 16px;
+}
+.main__container {
+  background: url("../img/03.jpg") 83% center no-repeat;
+  padding: 145px 15px;
+}
+.main__content {
+  max-width: 600px;
+}
+.main__text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #3056d3;
+  margin-bottom: 35px;
+}
+.main__title {
+  font-size: 36px;
+  line-height: 45px;
+  color: #212b36;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.main__title:hover {
+  text-shadow: greenyellow -2px 0, hotpink 2px 0;
+}
+.text-main {
+  margin-bottom: 35px;
+  color: #637381;
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 16px;
+}
+.btn {
+  display: inline-block;
+  color: white;
+  border-radius: 30px;
+  text-align: center;
+  padding: 10px 30px;
+  background: #3056d3;
+  border-radius: 30px;
+}
+.btn:hover {
+  color: crimson;
+  transition: 1s;
+}
+.btn::after {
+  content: "♥";
+}
+.footer {
+  padding: 0 100px;
+  background: linear-gradient(to bottom, #b721ff, #2af598, #fec051, #fee140, #fa709a);
+}
+.footer__title {
+  color: #000000;
+  font-family: "Inter", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 45px;
+}
+.footer__list {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 16px;
+  color: #637381;
+  margin-bottom: 60px;
+}
+.footer__item {
+  margin-bottom: 18px;
+  padding-left: 30px;
+  padding-top: 2px;
+  min-height: 30px;
+}
+.dot {
+  background: url("../img/dot.png") 0 10px no-repeat;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.dot:hover {
+  text-decoration: underline;
+  color: coral;
+}
+.blue {
+  background: url("../img/blue.png") 0 5px no-repeat;
+}
+.green {
+  background: url("../img/green.png") 0 5px no-repeat;
+}
+.red {
+  background: url("../img/red.png") 0 5px no-repeat;
+}
+.arrow {
+  /* background: url("../img/arrow.png") 0 5px no-repeat; */
+}
+  
+.footer__list_arrow{
+  font-family: "Inter";
+  font-weight: 700;
+  color: #637381;
+  margin-bottom: 60px;
+  margin-left: -30px;
+  background-color: #2af598;
+}
+
+
+.footer__list_arrow li:before{
+  content: "";
+  background: url('../img/arrow.png');
+  display: inline-block;
+  transition: all 0.3s;
+  width: 20px;
+  height: 18px;
+  margin-right: 10px;
+}
+.footer__list_arrow li:hover::before{
+  transform: rotate(-180deg);
+
+}
+
+
+.star {
+  background: url("../img/star.png") 0 5px no-repeat;
+}
+.star:hover {
+  cursor: pointer;
+  color: aqua;
+  text-decoration: underline;
+  transition: all 0.4s;
+}
+.block {
+  color: navajowhite;
+}
+.link {
+  color: darkred;
+  font-size: 40px;
+}
+.link:hover:after {
+  content: " GROMAK";
+  outline: 1px solid darkblue;
+  text-decoration: underline;
+}
+.link:hover::before {
+  content: "Homework 8";
+  outline: 1px solid rgb(0, 139, 0);
+  text-decoration: underline;
+  color: chartreuse;
+}
+.open-block {
+  color: aquamarine;
+}
+
+.open-block {
+  text-decoration: underline;
+}
+.footer-block {
+  display: none;
+}
+.footer-block:target {
+  display: block;
+}
+
+.block *:last-child {
+  color: rgb(38, 34, 34);
+}
+
+.ukraine {
+  background-color: yellow;
+  width: 300px;
+  height: 200px;
+  margin: auto;
+  cursor: pointer;
+}
+.ukraine::before {
+  content: "UKRAINE";
+  background-color: blue;
+  color: yellow;
+  text-align: center;
+  display: block;
+  height: 100px;
+  visibility: hidden;
+}
+.ukraine:hover::before {
+  visibility: visible;
+}
+.ukraine::after {
+  content: "UKRAINE";
+  background-color: blue;
+  text-align: center;
+  color: hwb(65 13% 7%);
+  display: block;
+  height: 100px;
+  visibility: hidden;
+}
+.ukraine:active::after {
+  visibility: visible;
+}
+.ukraine:active::before {
+  visibility: hidden;
+}
+
+.animation li::before{
+  content: "";
+  background: url("../img/star.png") 0 0 no-repeat;
+  display: inline-block;
+  transition: all 0.3s;
+  width: 20px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+.animation li:hover::before{
+  transform: scale(1.5);
+}
+
+
+
