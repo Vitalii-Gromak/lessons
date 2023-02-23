@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Inter300,500,600,700&display=swap");
+
+body {
+font-family: "Poppins", sans-serif;
+font-size: 18px;
+font-weight: 700;
+background: linear-gradient(180deg, rgba(16,57,235,1) 0%, rgba(242,224,10,1) 100%);
+text-align: center;
+}
+[class*="__container"] {
+max-width: 1270px;
+margin: 0 auto;
+padding: 0 15px;
+}
+img {
+max-width: 100%;
+}
+.header {
+}
+.header__container {
+}
+.icons {
+}
+.firstline {
+padding-top: 30px;
+}
+.secondline {
+}
+.treeline {
+}
+.main {
+}
+.content__container {
+   
+}
+.content {
+}
+div {
+margin-bottom: 60px;
+}
+.design-container{
+padding: 30px 0;
+}
+.design{
+max-width: 900px;
+height: 400px;
+margin: 0 auto;
+background: url("../img/Service/01.svg") no-repeat,
+url("../img/Service/08.svg") 220px 10px no-repeat,
+url("../img/Service/03.svg") 300px 10px no-repeat,
+url("../img/Service/04.svg") 400px 10px no-repeat,
+url("../img/Service/05.svg") 540px 10px no-repeat,
+url("../img/Service/06.svg") 100% 100% no-repeat,
+url("../img/Service/07.svg") 10px 145px no-repeat,
+url("../img/Service/02.svg") 200px 60px no-repeat;
+}
