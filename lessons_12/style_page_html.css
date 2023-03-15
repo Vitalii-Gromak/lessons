@@ -1,0 +1,59 @@
+.main__container {
+   max-width: 1400px;
+   margin: 0 auto;
+   padding-left: 15px;
+   padding-right: 15px;
+ }
+ .car {
+   background: rgb(238, 10, 208);
+   width: 500px;
+   height: 250px;
+   border-radius: 1000px 400px 0 0;
+   margin: 0 auto;
+   position: relative;
+ }
+ 
+ .car::before {
+   content: "";
+   position: absolute;
+   background-color: rgb(13, 0, 255);
+   width: 120px;
+   height: 100px;
+   right: 0;
+   top: 0;
+   border-radius: 0px 150px 0px 0px;
+ }
+ .car__content {
+ }
+ .circle {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   border: 6px dashed rgb(242, 242, 15);
+   background-color: blue;
+ }
+ .car__circle-1 {
+   position: absolute;
+   bottom: -50px;
+   left: 10px;
+ }
+ .car__circle-2 {
+   position: absolute;
+   bottom: -50px;
+   right: 10px;
+ }
+ .img {
+   width: 60px;
+   height: 80px;
+   position: relative;
+   top: 10px;
+   left: 15px;
+ }
+ 
+ .img__logo {
+   position: relative;
+   top: 40px;
+   left: 100px;
+   width: 280px;
+   height: 140px;
+ }
