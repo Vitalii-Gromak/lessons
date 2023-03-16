@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,500,700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.header__container{
+
+}
+[class*="__container"] {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+}
+.page {
+  flex: 0 1 auto;
+}
+.page__container {
+  margin-top: 50px;
+  margin-bottom: 44px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.08;
+  color: #495057;
+}
+.page__categories {
+  display: flex;
+  justify-content: space-between;
+}
+.categories__start {
+  position: relative;
+  cursor: pointer;
+}
+
+.categories__start:hover{
+   text-decoration: underline;
+   color: #495057;
+}
+.categories__end {
+  position: relative;
+  cursor: pointer;
+  
+}
+.categories__link {
+  padding-right: 20px;
+}
+.categories__link_active {
+  color: rgba(73, 80, 87, 0.5);
+}
+//...........................................................................................//
+
+.gallery__date {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.6; 
+}
+.gallery__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1.6; 
+  color: #212529;
+  transition: all 0.3s ease;
+}
+.gallery__title:hover {
+  color: #f21313;
+}
+.gallery__text {
+  font-weight: 300;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+.gallery__author {
+  width: 100%;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 15px;
+}
+.gallery__author span {
+  font-weight: 300;
+  line-height: 1.6;
+}
+.main__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px 60px;
+  row-gap: 45px;
+}
+.gallery__card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 33.333%;
+  padding: 0 15px;
+  position: relative;
+}
+.gallery__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 15px;
+  flex-grow: 1;
+}
+
+.card__button {
+   position: absolute;
+   top: 30px;
+   right: 45px;
+   background: rgba(33, 37, 41, 0.3);
+   border-radius: 3px;
+   text-transform: uppercase;
+   font-weight: 500;
+   font-size: 8px;
+   line-height: 2.5;
+   color: #F8F9FA;
+   padding: 3px 12px;
+   min-width: 64px;
+   text-align: center;
+   align-items: center;
+   transition: all .3s ease;
+ }
+ .card__button:hover {
+   transform: scale(1.7);
+   background: rgba(179, 183, 178, 0.5);
+ }
+//...........................................................................................//
+.footer {
+}
+.footer__row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f8f9fa;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 25px;
+}
+.btn {
+  display: inline-block;
+  background: #212529;
+  border-radius: 3px;
+  padding: 12px 50px 14px 50px;
+  color: #f8f9fa;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.btn:hover {
+  background: rgb(211, 47, 47);
+}
