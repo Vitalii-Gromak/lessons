@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8"/>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <link rel="stylesheet" href="css/reset.css"/>
+   <link rel="stylesheet" href="css/style.css"/>
+   <title>lessons_16</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <div class="form">
+         <h1>Shipping Address</h1>
+         <form class="form__body" action="#" method="post" enctype="multipart/form-data">
+            <div class="form__item">
+               <label for="email-01">Email Address<span>*</span></label>
+               <input id="email-01" autocomplete="off" name="Email Address" placeholder="email address" value=""
+                  type="email" class="form__input"/>
+            </div>
+            <div class="form__item">
+               <label for="password-01">Password</label>
+               <input id="password-01" autocomplete="off" name="password" placeholder="******************" value=""
+                  type="password" class="form__input" />
+            </div>
+            <div class="form__item">
+               <label for="number-01">Zip/Postal Code</label>
+               <input id="number-01" autocomplete="off" name="password" placeholder="" value="" type="number"
+                  class="form__input" />
+            </div>
+            <div class="paragraph">
+               <p>You already have an account with us. Sign in or continue as guest.</p>
+            </div>
+            <div>
+               <button class="btn">login</button>
+               <a href="#">Forgot Your Password?</a>
+               <div class="line"></div>
+               
+            </div>
+            <div class="form__item">
+               <label for="firstName">First Name <span>*</span></label>
+               <input id="firstName" autocomplete="off" name="First Name" placeholder="" value="Vitalii" type="text"
+                  class="form__input" />
+            </div>
+            <div class="form__item">
+               <label for="lastName">Last Name <span>*</span></label>
+               <input id="lastName" autocomplete="off" name="Last Name" placeholder="" value="Gromak" type="text"
+                  class="form__input" />
+            </div>
+            <div class="form__item">
+               <label for="Company">Company</label>
+               <input id="Company" autocomplete="off" name="Company" placeholder="" value="Court" type="text"
+                  class="form__input" />
+            </div>
+            <div class="form__item">
+               <label for="streetAdress">Street Address<span>*</span></label>
+               <input id="streetAdress" autocomplete="off" name="streetAdress" placeholder="" value="" type="text"
+                  class="form__input" />
+            </div>
+            <div class="form__item_item__form">
+               <div class="item__form"><input id="streetAdress" autocomplete="off" name="streetAdress" placeholder=""
+                     value="" type="text" class="form__input"/></div>
+               <div class="item__form"><input id="streetAdress" autocomplete="off" name="streetAdress" placeholder=""
+                     value="" type="text" class="form__input"/></div>
+            </div>
+            <div class="form__item">
+               <label for="Country">Country<span>*</span></label>
+               <input id="Country" autocomplete="off" name="Country" placeholder="" value="Ukraine" type="text"
+                  class="form__input"/>
+            </div>
+            <div class="form__item">
+               <label for="state-province" class="state-province">State/Province<span>*</span></label>
+               <select id="state-province" name="" class="form__input">
+                  <option value="">Kiev</option>
+                  <option value="">Dnipro</option>
+                  <option value="">Lviv</option>
+               </select>
+            </div>
+            <h1 class="form__title">Shipping Methods</h1>
+            <div class="line"></div>
+            <div class="form__radio">
+               <div class="form__radio-block">
+                  <input class="form__input__form" name="$" type="radio" id="$5.00">
+                  <label class="form__label" for="$5.00">$5.00</label>
+               </div>
+               <div class="form__text-text">Fixed</div>
+               <div class="form__text-text">Flat Rate</div>
+            </div>
+            <div class="line"></div>
+            <div class="form__radio">
+               <div class="form__radio-block">
+                  <input class="form__input__form" name="$" type="radio" id="$10.00">
+                  <label class="form__label" for="$10.00">$10.00</label>
+               </div>
+               <div class="form__text-text">Table Rate</div>
+               <div class="form__text-text">Best Way</div>
+            </div>
+            <div class="form__navigation">
+               <button class="form__navigation-btn__left">Next</button>
+               <button class="form__navigation-btn__right">Back</button>
+            </div>
+      </div>
+      <div class="form__form-checkout">
+         <div class="form__form-title">Checkout</div>
+         <div class="form__form-text">
+            <p>There are 3 products in your cart</p>
+         </div>
+         <div class="form__form-sibtitle">Billing Details</div>
+         <form class="form__form-body" action="#" method="post" enctype="multipart/form-data">
+            <div class="form__form-body-body__form">
+               <input autocomplete="off" name="First Name" placeholder="" value="First name*" type="text"
+                  class="form__input-checkout" />
+               <input autocomplete="off" name="Last Name" placeholder="" value="Last name*" type="text"
+                  class="form__input-checkout" />
+               <input autocomplete="off" name="Address*" placeholder="" value="Address*" type="text"
+                  class="form__input-checkout" />
+               <input autocomplete="off" name="Address line 2" placeholder="" value="Address line 2" type="text"
+                  class="form__input-checkout" />
+               <select id="" name="Country*" class="form__input-checkout">
+                  <option value="">Kiev</option>
+                  <option value="">Dnipro</option>
+                  <option value="">Lviv</option>
+               </select>
+               <input autocomplete="off" name="Country*" placeholder="" value="Country*" type="text"
+                  class="form__input-checkout"/>
+               <input autocomplete="off" name="Postcode / ZIP*" placeholder="Postcode / ZIP*" value="Postcode / ZIP*"
+                  type="number" class="form__input-checkout" />
+               <input autocomplete="off" name="Phone*" placeholder="" value="Phone*" type="tel"
+                  class="form__input-checkout"/>
+               <input autocomplete="off" name="Postcode / ZIP*" placeholder="" value="Postcode / ZIP*" type="number"
+                  class="form__input-checkout"/>
+               <input name="" placeholder="Postcode/ZIP*" value="Phone*" type="tel" class="form__input-checkout" />
+               <textarea name="" class="form__area" id="" cols="" rows="1">
+                  </textarea>
+               <div class="form__checkbox">
+                  <div class="form__checkbox-account">
+                     <input checked type="checkbox" name="" id="Create Account" class="input__checkbox">
+                     <label class="label__checkbox" for="Create Account">Create Account</label>
+                  </div>
+                  <div class="form__checkbox-adress">
+                     <input type="checkbox" name="" id="Ship to a different address?" class="input__checkbox">
+                     <label for="Ship to a different address?">Ship to a different address?</label>
+                  </div>
+               </div>
+               <div class="form-checkbox__coupon coupon">
+                  <div class="coupon__title">Apply Coupon to get discount!</div>
+                  <div class="coupon__line">
+                     <input autocomplete="off" type="text" name="coupon" placeholder="Coupon code"
+                        class="coupon__input">
+                     <button type="submit" class="coupon__button">Apply Code</button>
+                  </div>
+               </div>
+         </form>
+      </div>
+   </div>
+   </div>
+</body>
+
+</html>
