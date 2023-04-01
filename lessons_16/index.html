@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <link rel="stylesheet" href="css/reset.css"/>
+   <link rel="stylesheet" href="css/style.css"/>
+   <title>lessons_16</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container">
+            <h1 class="header__title">Checkout</h1>
+            <div class="header__text">There are 3 products in your cart</div>
+         </div>
+      </header>
+      <main class="page">
+         <section class="page__billing billing">
+            <div class="billing__container">
+               <form action="#" method="post" class="billing__form">
+                  <h2 class="billing__title title-details">Billing Details</h2>
+                  <div class="billing__items">
+                     <div class="billing__item">
+                        <input class="billing__input" required type="text" name="username" placeholder="First name*">
+                        <input class="billing__input" required type="text" name="userlastname" placeholder="Last name*">
+                     </div>
+                     <div class="billing__item">
+                        <input class="billing__input" required type="text" name="address" placeholder="Address*">
+                        <input class="billing__input" type="text" name="addressline2" placeholder="Address line 2">
+                     </div>
+                     <div class="billing__item select-item">
+                        <select id="country" name="country" class="billing__input select-style">
+                           <option value="Country*" selected disabled>Country</option>
+                           <option value="Ukraine">Ukraine</option>
+                           <option value="USA">USA</option>
+                           <option value="Germany">Italy</option>
+                        </select>
+                        <input class="billing__input" required type="text" name="usercity" placeholder="City/Town*">
+                     </div>
+                     <div class="billing__item">
+                        <input class="billing__input" required type="text" name="postcode"
+                           placeholder="Postcode / ZIP*">
+                        <input class="billing__input" required type="tel" name="phone*" placeholder="Phone*">
+                     </div>
+                     <div class="billing__item">
+                        <input class="billing__input" required type="text" name="postcode"
+                           placeholder="Postcode / ZIP*">
+                        <input class="billing__input" required type="tel" name="phone*" placeholder="Phone*">
+                     </div>
+                     <div class="billing__item ">
+                        <textarea class="billing__input item-textarea" name="additional"
+                           placeholder="Additional information"></textarea>
+                     </div>
+                  </div>
+                  <div class="billing__checkbox checkbox-billing">
+                     <div class="checkbox-billing__item">
+                        <input id="create-account" checked class="checkbox-billing__check" value="yes"
+                           name="create-account" type="checkbox">
+                        <label class="checkbox-billing__label" for="create-account">Create Account</label>
+                     </div>
+                     <div class="checkbox-billing__item">
+                        <input id="ship" class="checkbox-billing__check" value="yes" name="ship" type="checkbox">
+                        <label class="checkbox-billing__label" for="ship">Ship to a different address?</label>
+                     </div>
+                  </div>
+                  <div class="billing__coupon">
+                     <h2 class="billing__title title-coupon">Apply Coupon to get discount</h2>
+                     <div class="billing__item coupon-item">
+                        <input class="billing__input" required type="text" name="coupon" placeholder="Coupon code">
+                        <button type="submit" class="billing__apply">Apply Code</button>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </section>
+         <section class="page__shipping shipping">
+            <div class="shipping__container">
+               <form action="#" method="post" class="shipping__address">
+                  <h2 class="shipping__title">Shipping Address</h2>
+                  <div class="shipping__items">
+                     <div class="shipping__item">
+                        <label for="email" class="shipping__label">Email Address<span>*</span></label>
+                        <input class="shipping__input" id="email" required type="email" name="email"
+                           placeholder="roni_cost@example.com">
+                     </div>
+                     <div class="shipping__item">
+                        <label for="password" class="shipping__label">Password</label>
+                        <input class="shipping__input" id="password" type="password" name="password"
+                           placeholder="******************">
+                     </div>
+                     <div class="shipping__item">
+                        <label for="zip" class="shipping__label">Zip/Postal Code</label>
+                        <input type="text" class="shipping__input" id="zip" name="zip">
+                     </div>
+                  </div>
+                  <div class="shipping__text">You already have an account with us. Sign in or continue as guest.</div>
+                  <div class="shipping__login">
+                     <button type="submit" class="shipping__button">Login</button>
+                     <a href="#" class="shipping__link">Forgot Your Password?</a>
+                  </div>
+               </form>
+               <form action="#" method="post" class="shipping__info">
+                  <div class="shipping__items-info">
+                     <div class="shipping__item">
+                        <label for="first-name" class="shipping__label">First Name<span>*</span></label>
+                        <input type="text" class="shipping__input" id="first-name" required name="first-name">
+                     </div>
+                     <div class="shipping__item">
+                        <label for="last-name" class="shipping__label">Last Name<span>*</span></label>
+                        <input type="text" class="shipping__input" id="last-name" required name="last-name">
+                     </div>
+                     <div class="shipping__item">
+                        <label for="company" class="shipping__label">Company</label>
+                        <input type="text" class="shipping__input" id="company" name="company">
+                     </div>
+                     <div class="shipping__item">
+                        <label class="shipping__label">Street Address<span>*</span></label>
+                        <div class="shipping__street">
+                           <input type="text" class="shipping__input street-input" name="street-address">
+                           <input type="text" class="shipping__input street-input" name="street-address">
+                           <input type="text" class="shipping__input street-input" name="street-address">
+                        </div>
+                     </div>
+                     <div class="shipping__item">
+                        <label for="country02" class="shipping__label">Country</label>
+                        <input type="text" class="shipping__input" id="country02" name="country">
+                     </div>
+                     <div class="shipping__item">
+                        <label for="state" class="shipping__label">State/Province<span>*</span></label>
+                        <select class="shipping__input shipping-select" id="state" name="state">
+                           <option disabled selected value="Please select a region, state or province">Please select a
+                              region, state or province
+                           </option>
+                           <option value="Ukraine">Ukraine</option>
+                           <option value="USA">USA</option>
+                           <option value="Italy">Italy</option>
+                        </select>
+                     </div>
+                  </div>
+                  <h2 class="shipping__title">Shipping Methods</h2>
+                  <div class="shipping__radio radio">
+                     <div class="radio__item item-radio-01">
+                        <input checked class="radio__input" id="price1" required value="5$" name="price" type="radio">
+                        <label class="radio__label" for="price1">5$</label>
+                        <div class="radio__info">
+                           <div class="radio__label-text">Fixed</div>
+                           <div class="radio__label-text">Flat Rat</div>
+                        </div>
+                     </div>
+                     <div class="radio__item item-radio-02">
+                        <input class="radio__input" id="price2" required name="price" value="10$" type="radio">
+                        <label class="radio__label" for="price2">10$</label>
+                        <div class="radio__info">
+                           <div class="radio__label-text">Table Rate</div>
+                           <div class="radio__label-text">Best Way</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="shipping__next">
+                     <button type="submit" class="shipping__button">Next</button>
+                     <a href="#" class="shipping__back">Back</a>
+                  </div>
+               </form>
+            </div>
+         </section>
+         <section class="page__practice practice">
+            <div class="practice__container">
+               <form action="#" method="post" class="practice__form">
+                  <div class="practice__login">
+                     <h3 class="practice__title">Login</h3>
+                     <div class="practice__box">
+                        <input class="practice__input" type="text" required="">
+                        <label class="practice__label">Name</label>
+                     </div>
+                     <div class="practice__box">
+                        <input minlength="3" maxlength="10" class="practice__input" type="password" required="">
+                        <label class="practice__label">Password</label>
+                     </div>
+                     <input class="practice__submit" type="submit" value="Send">
+                  </div>
+               </form>
+            </div>
+         </section>
+      </main>
+   </div>
+</body>
+
+</html>
