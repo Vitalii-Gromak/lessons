@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,400,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald:regular,400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:300,500,700&display=swap");
+
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+[class*="__container"] {
+  max-width: 730px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #637381;
+}
+
+.header {
+  padding-top: 50px;
+}
+.header__text {
+  margin-bottom: 30px;
+}
+
+.header__title {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 55px;
+  color: #212b36;
+}
+.header__title:not(:last-child) {
+  margin-bottom: 8px;
+}
+.billing__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #212b36;
+}
+.title-details:not(:last-child) {
+  margin-bottom: 30px;
+}
+.title-coupon:not(:last-child) {
+  margin-bottom: 25px;
+}
+.page__billing {
+}
+.billing__items {
+  display: flex;
+  flex-direction: column;
+}
+.billing__item {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+.billing__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+.billing__input {
+  border: 1px solid #e7e7e7;
+  border-radius: 7px;
+  padding: 15px 25px;
+  flex: 0 1 336px;
+}
+.item-textarea {
+  flex: 0 1 100%;
+  resize: vertical;
+  height: 180px;
+}
+.billing__items:not(:last-child) {
+  margin-bottom: 35px;
+}
+.billing__checkbox {
+  margin-bottom: 55px;
+}
+.checkbox-billing__item:not(:last-child) {
+  margin-bottom: 25px;
+}
+.checkbox-billing__item {
+  position: relative;
+}
+.checkbox-billing__check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+.checkbox-billing__label {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+.checkbox-billing__label:before {
+  content: "";
+  flex: 0 1 22px;
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  border: 0.7px solid #e7e7e7;
+}
+.checkbox-billing__check:checked + .checkbox-billing__label:before {
+  content: "";
+  background: url("../img/svg/Frame 22.svg") center no-repeat;
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  border: 0.7px solid #e7e7e7;
+}
+.select-style {
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: inherit;
+  appearance: none;
+  background: url("../img/svg//Union.svg") 95% no-repeat;
+}
+.billing__apply {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #ffffff;
+  padding: 12px 22px;
+  transition: 0.5s ease 0s;
+  background: #212b36;
+  border-radius: 5px;
+  transition: all 0.5s ease 0s;
+}
+.billing__coupon {
+  margin-bottom: 50px;
+}
+.billing__apply:hover {
+  color: #000000;
+  background: #cfcfcf;
+}
+.coupon-item {
+  flex: 0 1 325px;
+  gap: 20px;
+}
+.shipping__address {
+  border-bottom: 1px solid #c4c4c4;
+  width: 100%;
+  padding-bottom: 36px;
+  margin-bottom: 39px;
+}
+.shipping__title {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 24px;
+  color: #000000;
+  line-height: 1.5;
+}
+.shipping__title:not(:last-child) {
+  margin-bottom: 34px;
+}
+.shipping__container {
+  max-width: 636px;
+}
+.shipping__items:not(:last-child) {
+  margin-bottom: 14px;
+}
+.shipping__item {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.shipping__input {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #3f3f3f;
+  border: 1px solid #c4c4c4;
+  padding: 5px 16px;
+  width: 450px;
+  height: 44px;
+}
+.shipping__item:not(:last-child) {
+  margin-bottom: 25px;
+}
+.shipping__label {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #3f3f3f;
+  flex-grow: 1;
+}
+.shipping__label span {
+  color: #eb5757;
+  padding-left: 5px;
+}
+
+.shipping__button {
+  font-family: "Oswald";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 15px 42px;
+  background: #000000;
+  transition: all 0.5s ease 0s;
+}
+.shipping__button:hover {
+  color: #000000;
+  background: #cfcfcf;
+}
+
+.shipping__link {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #0f6db1;
+  transition: background 0.5s ease 0s;
+}
+
+.shipping__text {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #828282;
+}
+.shipping__text:not(:last-child) {
+  margin-bottom: 28px;
+}
+.shipping__login {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+.shipping__street {
+  flex: 0 1 74%;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  flex-wrap: wrap;
+}
+
+.shipping-select {
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: inherit;
+  appearance: none;
+  background: url("../img/svg/Union.svg") 420px no-repeat;
+}
+.shipping__items-info {
+  margin-bottom: 80px;
+}
+.radio {
+}
+.radio__item {
+  position: relative;
+  padding: 15px 0;
+  gap: 110px;
+  display: flex;
+}
+.item-radio-01 {
+  border-top: 1px solid #c4c4c4;
+  width: 100%;
+}
+.item-radio-02 {
+  border-top: 1px solid #c4c4c4;
+  width: 100%;
+}
+.radio__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.radio__input:checked + .radio__label {
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+
+.radio__input:checked + .radio__label::before {
+  border: 3px solid #000;
+}
+.radio__label {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 13px;
+  flex: 0 1 65px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #3f3f3f;
+}
+
+.radio__label::before {
+  content: "";
+  flex: 0 0 10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid #000;
+}
+.radio__info {
+  position: relative;
+  padding: 15px 0;
+  gap: 110px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.shipping__radio {
+  margin-bottom: 40px;
+}
+
+.shipping__back {
+  font-family: "Oswald";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #828282;
+}
+.shipping__next {
+  display: flex;
+  justify-content: space-between;
+}
+.shipping__back:hover {
+  color: #000000;
+}
+
+
+@media (max-width: 730px) {
+  .billing__container {
+    max-width: 730px;
+    margin: 0 auto;
+    padding: 30px 15px;
+  }
+  .page__billing:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  .header {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .header__title {
+    font-size: 34px;
+  }
+  .billing__title {
+    text-align: center;
+    font-size: 18px;
+  }
+  .billing__items {
+    row-gap: 15px;
+    column-gap: 28px;
+  }
+  .billing__input {
+    flex: 0 0 100%;
+  }
+  .billing__form {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 630px) {
+  .shipping__item {
+    flex: 1 1 auto;
+  }
+  .billing__apply {
+    width: 630px;
+  }
+}
+
+@media (max-width: 590px) {
+  .shipping__items {
+    flex: 0 0 100%;
+  }
+}
+
+@media (max-width: 470px) {
+  .item-radio-01,
+  .item-radio-02 {
+    gap: 55px;
+  }
+  .shipping__radio {
+    margin-bottom: 10px;
+  }
+  .shipping__items {
+    flex: 1 0 auto;
+  }
+  .billing__container,
+  .shipping__container {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .billing__apply {
+    width: 320px;
+  }
+  .shipping__items-info {
+    margin-bottom: 15px;
+  }
+  .header {
+    padding-top: 10px;
+    margin-bottom: 0px;
+  }
+}
